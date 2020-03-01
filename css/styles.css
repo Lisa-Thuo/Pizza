@@ -30,6 +30,8 @@ table {
 table, th, td {
     border: 1px solid  black;
     border-collapse: collapse;
+    margin-left: 350px;
+    margin-right: auto;
 }
 th, td{
     padding: 10px;
@@ -37,12 +39,12 @@ th, td{
 #menu{
     color: white;
     font-weight: bolder;
+    margin-left: 200px;
     background-image: url(../images/men.jpg);
-    width: 450px;
+    width: 100%;
     height: 460px;
     background-repeat: no-repeat;
 }
-#stuff{
-    float: left;
-    
+.price{
+    margin-left: 500px;
 }
