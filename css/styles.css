@@ -4,6 +4,9 @@ h1{
     font-size: 55px;
     
 }
+#welcome{
+    text-align: center;
+}
 ul li{
     list-style: none;
 }
@@ -12,4 +15,23 @@ ul li{
     background-size: cover;
     height: 580px;
     width: 100%;
+}
+table {
+    width: 400px;
+    text-align: center
+}
+table, th, td {
+    border: 1px solid  black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+}
+#menu{
+    color: white;
+    font-weight: bolder;
+    background-image: url(../images/men.jpg);
+    width: 450px;
+    height: 460px;
+    background-repeat: no-repeat;
 }
