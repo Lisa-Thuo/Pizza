@@ -42,3 +42,7 @@ th, td{
     height: 460px;
     background-repeat: no-repeat;
 }
+#stuff{
+    float: left;
+    
+}
