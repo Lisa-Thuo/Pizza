@@ -1,14 +1,21 @@
 h1{
     text-align: center;
     color: white;
-    font-size: 55px;
-    
+    font-size: 55px;  
 }
+ul li {
+ list-style: none;
+ display: inline-block;
+}
+ul li a {
+ text-decoration: none;
+ color: white;
+ font-size: 30px;
+ padding: 0 20px;
+}
+
 #welcome{
     text-align: center;
-}
-ul li{
-    list-style: none;
 }
 .ody{
     background-image: url(../images/food.jpg);
