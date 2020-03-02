@@ -27,7 +27,7 @@
     <div class="nav">
 
         <div id="welcome">
-            <h2 style="text-align: center;">Welcome</h2>
+            <h2 style="text-align: center; font-size: 40px; font-weight: bolder;">Welcome</h2>
             <p>Welcome to our website. We offer a wide range of pizzas with recipes that were formulated by some of the
                 best chefs in the world. Our dishes are designed to accomodate specific preferences or allergies. We do
                 our best to ensure that you receive good quality meals that are both tasty and non-harmful. With us, you
@@ -37,7 +37,7 @@
                 standards.</p>
         </div>
         <div id="menu">
-            <h2 class="price">MENU</h2>
+            <h2 class="price" style="font-weight: bolder; font-size: 40px;">MENU</h2>
             <table>
                 <tr>
                     <th>Pizza</th>
@@ -71,7 +71,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <h2>ORDER</h2>
+                        <h2 style="text-align: center; color: maroon; font-size: 40px; font-weight: bolder;">ORDER</h2>
                     </div>
 
                     <form [form-group] id="stuff">
@@ -92,12 +92,12 @@
                         <div class="form-group">
                             <label for="region">Region</label>
                             <select name="region" input type="number" id="region">
-                                <option value="1">Thika</option>
-                                <option value="2">Kilimani</option>
-                                <option value="3">Athi River</option>
-                                <option value="4">Ngong Lane</option>
-                                <option value="5">Westlands</option>
-                                <option value="6">Naivasha</option>
+                                <option value="0">Thika</option>
+                                <option value="1">Kilimani</option>
+                                <option value="2">Athi River</option>
+                                <option value="3">Ngong Lane</option>
+                                <option value="4">Westlands</option>
+                                <option value="5">Naivasha</option>
                             </select>
                         </div>
                     </div>
@@ -105,11 +105,11 @@
                     <div class="form-group">
                         <label for="flavor">Kind</label>
                         <select id="type" name="type">
-                            <option value="1">Chicken Barbeque</option>
-                            <option value="2">Hawaiian</option>
-                            <option value="3">Vegeterian</option>
-                            <option value="4">Bacon</option>
-                            <option value="5">Gluten Free</option>
+                            <option value="0">Chicken Barbeque</option>
+                            <option value="1">Hawaiian</option>
+                            <option value="2">Vegeterian</option>
+                            <option value="3">Bacon</option>
+                            <option value="4">Gluten Free</option>
                         </select>
                     </div>
                 </div>
@@ -117,9 +117,9 @@
                     <div class="form-group">
                         <label for="size">Size</label>
                         <select id="size" name="size">
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
+                            <option value="0">Small</option>
+                            <option value="1">Medium</option>
+                            <option value="2">Large</option>
                         </select>
                     </div>
                 </div>
@@ -127,9 +127,9 @@
                     <div class="form-group">
                         <label for="crust">Crust</label>
                         <select id="crust" name="crust">
-                            <option value="1">Crispy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-Free</option>
+                            <option value="0">Crispy</option>
+                            <option value="1">Stuffed</option>
+                            <option value="2">Gluten-Free</option>
                         </select>
                     </div>
                 </div>
@@ -137,10 +137,10 @@
                     <div class="form-group">
                         <label for="toppings">Toppings</label>
                         <select id="toppings" name="toppings">
-                            <option value="1">Cheese</option>
-                            <option value="2">Sauce</option>
-                            <option value="3">Olives</option>
-                            <option value="4">Bay</option>
+                            <option value="0">Cheese</option>
+                            <option value="1">Sauce</option>
+                            <option value="2">Olives</option>
+                            <option value="3">Bay</option>
                         </select>
                     </div>
                 </div>
@@ -150,14 +150,20 @@
                         <input type="number" id="no" placeholder="Number of Pizzas" required>
                     </div>
                 </div>
+                <div class="but">
+                    <div class="form-group">
+                        <button type="submit" onclick="orderPizza()">SUBMIT</button>
+                    </div>
+                </div>
 
 
             </div>
         </div>
-    </div>
+    
 
 
     </form>
+</div>
 
 </body>
 
