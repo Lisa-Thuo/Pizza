@@ -1,15 +1,24 @@
 //Business Logic
-$(document).ready(function(){
+
     function Extra(kind, size, crust, toppings, numbers, delivery){
-        // this.first = first;
-        // this.size=size
+        this.kind=kind,
+        this.size=size,
+        this.crust=crust,
+        this.toppings=toppings,
+        this.numbers=numbers,
+        this.delivery=del
+
+        Extra.prototype.combineProperties = function() {
+            return " this.first, " + "You have ordered " + "this.numbers"+" this.kind " + " this.size " + " this.toppings " + " this.crust ";
+        
+        $(document).ready(function(){
         this.crusts={
             "crispy":100,
             "stuffed":100,
             "gluten-free":100
         }
         this.toppings={
-            "cheese": 50,
+            "cheese":50,
             "sauce":50,
             "olives":50,
             "bay":50
@@ -26,9 +35,8 @@ $(document).ready(function(){
         this.price=(this.kind[kind][size] + this.toppings[toppings] + this.crusts[crust] + this.delivery[delivery]) * numbers;
     }
     
-    Extra.prototype.combineProperties = function() {
-        return " this.first, " + "You have ordered " + "this.numbers"+" this.kind " + " this.size " + " this.toppings " + " this.crust ";
-    }
+    
+    };
     $("#orderPizza").click (function(){
         var type = $("#type").val;
         var crust = $('#crust').val;
@@ -37,6 +45,7 @@ $(document).ready(function(){
         var cost = new Extra(type, crust, toppings, del);
         console.log(cost);
     });
+    alert('first'+ "You have ordered"+ 'number'+ 'pizza' + 'for'+ '*number')
     //user interface logic
     // $(document).ready(function(){
     //   var  first=parseInt(document.getElementByClassName("first").value);
