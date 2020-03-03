@@ -76,7 +76,7 @@
                         <h2 style="text-align: center; color: maroon; font-size: 40px; font-weight: bolder;">ORDER</h2>
                     </div>
 
-                    <form [form-group] id="stuff">
+                    <form class="form-group" method="post" onsubmit="event.preventDefault()" id="stuff">
                         <div class="first">
                             <div class="form-group">
                                 <label for="name">First Name</label>
@@ -168,7 +168,7 @@
 
                             <div class="but">
                                 <div class="form-group">
-                                    <button type="submit" onclick="orderPizza()">Checkout</button>
+                                    <button type="button" class="btn btn-primary" id="orderPizza">Checkout</button>
                                 </div>
 
                             </div>
@@ -183,5 +183,6 @@
                 </div>
 
 </body>
+<script src="js/scripts.js"></script>
 
 </html>
