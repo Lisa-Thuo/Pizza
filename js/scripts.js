@@ -13,8 +13,8 @@ Extra.prototype.combineProperties = function() {
 
 //user interface logic
 $(document).ready(function(){
-  (".but").click(function(){
-      
-  })  
+  var  first=parseInt(document.getElementByClassName("first").value);
+  var  last=parseInt(document.getElementByClassName("last").value);
+  ;
 })
 
