@@ -1,6 +1,6 @@
 //Business Logic
 
-    function myFunction(kind, size, crust, toppings, numbers, delivery){
+    function Food(first, kind, size, crust, toppings, numbers, delivery){
         this.crusts={
             "crispy":100,
             "stuffed":100,
@@ -25,30 +25,44 @@
             "yes": 200,
             "no":0
         }
-        //User Interface
-        $("#orderPizza").click (function(){
-            var type = $("#type").val;
-            var crust = $('#crust').val;
-            var toppings = $('#toppings').val;
-            var del = $("#del").val;
-            var cost = new Extra(type, crust, toppings, del);
-            console.log(cost);
-        });
-        
-    
-    this.numbers=numbers
-        this.price=(this.kind[kind][size] + this.toppings[toppings] + this.crusts[crust] + this.delivery[delivery]) * numbers;
-        Extra.prototype.combineProperties = function() {
-            return [" this.first, "+ "You have ordered " + "this.numbers"+" this.kind " + " this.size " + " this.toppings " + " this.crust "*"numbers"]
-        }
-        if(del="yes"){
-            return ["Your total will be increased by two hundred because of delivery charges"]
-            
-        }
-        else if(del="no"){
-        return [" this.first, "+ "You have ordered " + "this.numbers"+" this.kind " + " this.size " + " this.toppings " + " this.crust "*"numbers"]
-    
+        this.numbers="numbers"
+        Food.prototype.combineProperties = function() {
+            return "this.first,"
++ "you have ordered" + "this.numbers" + "this.kind" 
+}
+returnValueFunction = (this.kind[kind][size] + this.crust[crust] + [this.crust] + [this.delivery] * [this.numbers])
+Food.prototype.firstKindSizeCrustToppingsNumbersDelivery= function(){
+    return this.numbers + this.kind;
+}
     }
+    //User Interface
+    $(document).ready(function(){
+        $("form").submit(function(event){
+            event.preventDefault();
+            var inputtedfirst=parseInt($("input[name='name'):checked").val());
+            var inputtedsize=parseInt($("input[name='size):checked").val());
+            var inputtedkind=parseInt($("input[name='kind'):checked").val());
+            var inputtedcrust=parseInt($("input[name='crust'):checked").val());
+            var inputtedtoppings=parseInt($("input[name='toppings'):checked").val());
+            var inputtednumbers=parseInt($("input[name='numbers'):checked").val());
+            var inputteddelivery=parseInt($("input[name='del'):checked").val());
+
+            if(del='yes'){
+                var delivery=parseInt(200);
+            }
+
+            else if (del=='yes'){
+                prompt("Your total will be increased by 200 due to delivery charges");
+            }
+            else if (del=='no'){
+                var delivery=parseInt(0);
+            }
+
+        }
+        
+
+
+    
     
     
    
